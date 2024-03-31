@@ -1,9 +1,6 @@
 package com.casestudy.balance.model;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Data;
 
 @Entity
@@ -12,8 +9,8 @@ import lombok.Data;
 public class Holding {
 
     @Id
-    //@GeneratedValue(strategy = GenerationType.AUTO)
-    private long id;
+    @GeneratedValue(strategy = GenerationType.UUID)
+    private String id;
 
     @Column(name = "member_code")
     private String memberCode;

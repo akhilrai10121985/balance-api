@@ -52,7 +52,7 @@ public class HoldingServiceImplTest {
     private void createHoldings(List<Holding> holdings)
     {
         Holding holding = new Holding();
-        holding.setId(1);
+        holding.setId("1");
         holding.setMemberCode("m1");
         holding.setFundCode("f1");
         holding.setUnits(100);
